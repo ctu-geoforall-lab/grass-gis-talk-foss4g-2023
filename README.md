@@ -1,6 +1,6 @@
 # GRASS GIS Talks
 
-* Open Data Science Europe - Wageningen 2021: [GRASS GIS 8: From Desktop to Big Data Cubes](https://veroandreo.github.io/grass-gis-talks/wageningen2021.html)
+* FOSS4G 2022 - Florence: [State of GRASS GIS](https://neteler.github.io/grass-gis-talks/foss4g2022.html)
 
 ## Authors, Copyright, and License
 
