@@ -276,6 +276,200 @@
         <img src="img/hexagons_3d_white_outlier.png" class="stretch">
 </section>
 
+
+<section>
+    <h2>Integration with Jupyter Notebooks</h2>
+    <ul>
+        <li>Notebooks: Mix of text, code, results, images, &hellip;</li>
+        <li>Usage: Prototyping, reproducibility, tutorials, &hellip;</li>
+        <li>Now in GRASS GIS: Python functions for easy integration</li>
+    </ul>
+    <img src="img/jupyter_text_images_3d.png" class="stretch">
+    <p>by Caitlin Haedrich</p>
+</section>
+
+
+<section>
+    <h2>Integration with Jupyter Notebooks</h2>
+    <p>
+        Web map with base maps, zooming, customizations, &hellip;
+    </p>
+    <img src="img/jupyter_interactive_viewshed.png" class="stretch">
+    <p>
+        <a href="https://tinyurl.com/grass-rc2">tinyurl.com/grass-rc2</a> (run in Binder)
+    </p>
+    <p>by Vaclav Petras and Anna Petrasova</p>
+</section>
+
+
+<section>
+    <h2>Integration with Jupyter Notebooks</h2>
+    <p>
+        Time-series visualization
+    </p>
+    <img src="img/jupyter_timeseries_viewshed.gif" class="stretch">
+    <p>by Vaclav Petras and Anna Petrasova</p>
+</section>
+
+
+<section>
+    <h2>Integration with Jupyter Notebooks</h2>
+    <p>
+        3D visualization
+    </p>
+    <img src="img/jupyter_3d_viewshed.png" class="stretch">
+    <p>by Vaclav Petras and Anna Petrasova</p>
+</section>
+
+
+<section>
+    <h2>Semantic Labels for Rasters</h2>
+    <ul>
+        <li>
+            attach a labels to raster maps
+            <small>(e.g., <code>S2_1</code> or <code>red</code>)</small>
+            <ul>
+                <li>image classification can use sematic labels to identify bands</li>
+                <li>different scenes can then be classified if semantic labels are the same</li>
+            </ul>
+        </li>
+        <li>
+            organize bands within one spatio-temporal dataset
+        </li>
+    </ul>
+    <br>
+    <img src="img/i_superpixels_slic_ndvi.png" class="stretch">
+    <p>by Maris Nartiss, Martin Landa, Markus Metz</p>
+</section>
+
+
+<section>
+    <h2>Sentinel, THREDDS, &hellip;, netCDF, CSV</h2>
+    <p>
+        Automated download and import of common datasets
+        <small>
+            i.sentinel, i.modis, i.landsat, r.in.usgs, r.in.nasadem, m.crawl.thredds, t.rast.import.netcdf, &hellip;
+        </small>
+    </p>
+    <img src="img/usgs_ned_naip_3d.png" class="stretch">
+    <p>
+        <small>
+            by
+            Fondazione Edmund Mach,
+            OpenGeoLabs,
+            mundialis,
+            GSoC,
+            NC&nbsp;State University,
+            CONICET,
+            Norwegian Institute for Nature Research,
+            <!--
+            Luca&nbsp;Delucchi (Fondazione Edmund Mach),
+            Martin Landa (OpenGeoLabs),
+            Anika&nbsp;Weinmann (mundialis),
+            Guido&nbsp;Riembauer (mundialis),
+            Roberta&nbsp;Fagandini (GSoC),
+            Zechariah&nbsp;Krautwurst (GSoC),
+            Anna&nbsp;Petrasova (NC&nbsp;State University),
+            Vaclav&nbsp;Petras (NC&nbsp;State University),
+            Veronica&nbsp;Andreo (CONICET),
+            Stefan&nbsp;Blumentrath (Norwegian Institute for Nature Research - NINA)
+            -->
+            &hellip;
+        </small>
+    </p>
+</section>
+
+<section>
+    <h2>Integration of results from Google Summer of Code 2021</h2>
+    <h3>OpenMP parallelization by Aaron Saw Min Sern</h3>
+    <div class="container">
+        <div class="col">
+            <ul>
+                <li>r.series</li>
+                <li>r.univar</li>
+                <li>r.neighbors</li>
+                <li>r.patch</li>
+                <li>r.resamp.interp</li>
+                <li>r.resamp.filter</li>
+                <li>r.mfilter</li>
+                <li>r.slope.aspect</li>
+            </ul>
+            <p> + benchmarking library</p>
+        </div>
+        <div class="col">
+            <img src="img/gsoc/openmp.png">
+        </div>
+    </div>
+    <p>Available in 8.2+</p>
+    <aside class="notes">
+        <ul>
+            <li>Parallelization of multiple, often used raster modules, with benchmarks.</li>
+            <li>Especially useful for big data processing</li>
+            <li>Supported on all platforms, provided GRASS is compiled with OpenMP</li>
+        </ul>
+    </aside>
+</section>
+
+<section>
+    <h2>Speed Improvements: Multi-threading with OpenMP</h2>
+    <ul>
+        <li>More tasks done in parallel in the same tool</li>
+        <li><code>nprocs</code> specifies number of cores (processes, threads)</li>
+        <li><code>memory</code> specifies RAM in MB</li>
+        <li><em>Performance</em> section in documentation describes the behavior</li>
+    </ul>
+    <img src="img/openmp_r_series_section.png" class="stretch">
+</section>
+
+<section>
+    <h2>New core modules using OpenMP parallelization</h2>
+    <ul>
+        <li>r.series: cell value is a function of the corresponding cells in the input maps</li>
+        <li>r.neighbors: cell value is a function of the cells around it</li>
+        <li>r.mfilter: cell value is a function of the cells around it</li>
+        <li>r.slope.aspect: slope, aspect, and other derivatives of an elevation raster</li>
+        <li>r.patch: mosaic multiple rasters into one</li>
+    </ul>
+    <p>
+        <img src="img/r_series_average_explanation.png" style="height: 7ex">
+    </p>
+<!--
+    <img src="img/openmp_r_series.png" class="stretch">
+-->
+    <p>by Aaron Saw Min Sern in 8.2</p>
+</section>
+
+
+<section>
+    <h2>More parallel tools</h2>
+    <ul>
+        <li>
+            Core tools:
+            <small>
+            r.sun, v.surf.rst, r.sim.sediment, r.sim.water
+            </small>
+        </li>
+        <li>
+            Addons tools:
+            <small>
+            r.sun.daily, r.in.usgs,
+            r.mapcalc.tiled, t.rast.what.aggr,
+            r.connectivity.corridors, r.viewshed.exposure,
+            and 14 more
+            <!-- 20 total -->
+            </small>
+        </li>
+        <li>
+            Parallelizing custom Python scripts:
+            <ul>
+                <li>GridModule <small>(by tile)</small></li>
+                <li>multiprocessing, ParallelModuleQueue <small>(by task)</small></li>
+            </ul>
+        </li>
+    </ul>
+    <img src="img/piemonte_shaded_elevation.png" class="stretch">
+</section>
+
 <!--
 <section>
     <h1>Cool stuff that has been there for a while...</h1>
@@ -382,7 +576,19 @@
 
 -->
 
+
+<section>
+    <h2>Visual Exposure to a Defined Source</h2>
+    <em>r.viewshed.exposure</em> - Weighted cumulative viewshed analysis defining visual exposure to a source
+    <br>
+    <img src="img/r_viewshed_exposure.png" class="stretch">
+    <p>by Zofie Cimburova and Stefan Blumentrath</p>
+</section>
+
+<!--
 <section id="GRASS GIS 8">
+-->
+
 <section>
     <h2>Roadmap</h2>
     <ul>
@@ -578,41 +784,23 @@
 
 <section>
     <h2>Integration of results from Google Summer of Code 2021</h2>
-    <h3>OpenMP parallelization by Aaron Saw Min Sern</h3>
-    <div class="container">
-        <div class="col">
-            <ul>
-                <li>r.series</li>
-                <li>r.univar</li>
-                <li>r.neighbors</li>
-                <li>r.patch</li>
-                <li>r.resamp.interp</li>
-                <li>r.resamp.filter</li>
-                <li>r.mfilter</li>
-                <li>r.slope.aspect</li>
-            </ul>
-            <p> + benchmarking library</p>
-        </div>
-        <div class="col">
-            <img src="img/gsoc/openmp.png">
-        </div>
-    </div>
-    <p>Available in 8.2+</p>
-    <aside class="notes">
-        <ul>
-            <li>Parallelization of multiple, often used raster modules, with benchmarks.</li>
-            <li>Especially useful for big data processing</li>
-            <li>Supported on all platforms, provided GRASS is compiled with OpenMP</li>
-        </ul>
-    </aside>
-</section>
-
-<section>
-    <h2>Integration of results from Google Summer of Code 2021</h2>
     <h3>Single-Window GUI by Linda Kladivova</h3>
     <img src="img/gsoc/proposal3.png" class="stretch">
     <p>
         Code refactoring to enable Single-Window GUI with dockable widgets.
+    </p>
+    <p>Available in 8.2+</p>
+</section>
+
+
+<section>
+    <h2>Single-Window GUI</h2>
+    <p>
+        One window with optimized layout.
+    </p>
+    <img src="img/single_window_8.2_dark.png" class="stretch">
+    <p>Opt-in preview in 8.2: <em>Settings &gt; Preferences &gt; General</em></p>
+    <p>by Linda Kladivova</p>
     </p>
     <p>Available in 8.2+</p>
 </section>
@@ -1041,6 +1229,29 @@
             <img src="https://grass.osgeo.org/images/other/Grass_osgeo_codesprint_2018.jpg">
         </div>
     </div>
+</section>
+
+
+<section>
+    <h2>Sponsoring: how to...?</h2>
+    <ul>
+        <li>Individuals:
+            <ul>
+                <li>Time: organize virtual community event, fix typos, &hellip;</li>
+                <li>
+                    Money: <a href="https://opencollective.com/grass">opencollective.com/grass</a>
+                    <small>(new!)</small>
+                </li>
+            </ul>
+        </li>
+        <li>Organizations:
+            <ul>
+                <li>Time: employee time</li>
+                <li>Money: pay developers (companies) <small>to add features or fix bugs</small></li>
+            </ul>
+        </li>
+    </ul>
+    <img src="img/osgeo_codesprint_2018.jpg" class="stretch">
 </section>
 
 <section>
