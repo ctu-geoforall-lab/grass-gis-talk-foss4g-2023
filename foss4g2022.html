@@ -186,11 +186,11 @@
             <ul>
                 <li><b>GRASS GIS</b> (Geographic Resources Analysis Support System), a FOSS suite used for geospatial data management and analysis, image processing, spatial modeling, and visualization.</li>
                 <li>Originally developed by the U.S. Army CERL for land management and environmental planning (1982-1995).</li>
-                <li><a href="https://grass.osgeo.org/about/history/">38 years of continuous geospatial development</a></li>
+                <li><a href="https://grass.osgeo.org/about/history/">39 years of continuous geospatial development</a></li>
             </ul>
         </div>
         <div class="column" style="width:39%;text-align:center;padding-top:0.5em;">
-            <img src="img/grass_38_bday.png" alt="GRASS GIS 38th birthday" width="100%">
+            <img src="img/grass_bday_39.png" alt="GRASS GIS 39th birthday" width="100%">
         </div>
     </div>
 </section>
@@ -303,15 +303,15 @@
             <small>Single window interface as the default.</small>
         </li>
         -->
-    </ul>
-    <p><small>
-        major.minor.micro &ndash; semantic versioning:<br>
-        &ndash; micro (x.y.z) brings <b>fixes</b>,<br>
-        &ndash; minor (x.y) brings <b>features</b>,<br>
-        &ndash; major (x) brings <b>features and possibly backward incompatible changes</b>
-    </small></p>
-    <br>
-    <img src="img/splash_screen.png" alt="GRASS GIS splash screen" class="stretch">
+	<ul>
+          <li> major.minor.micro &ndash; semantic versioning:</small></li>
+           <ul>
+              <li> <small>micro (x.y.z) brings <b>fixes</b>,</small></li>
+              <li> <small>minor (x.y) brings <b>features</b>,</small></li>
+              <li> <small>major (x) brings <b>features and possibly backward incompatible changes</b></small></li>
+          </ul>
+        </ul>
+    <img src="img/splash_screen.png" alt="GRASS GIS splash screen" width="70%">
 </section>
 
 <!--  Vero's version:
@@ -459,34 +459,19 @@
     <h2>New! Semantic Labels for Rasters</h2>
     <ul>
         <li>
-            attaches meaningful labels to raster maps
+            assigning meaningful labels to raster maps
             <small>(e.g., <code>S2_1</code> or <code>red</code>)</small>
             <ul>
                 <li>image classification can use sematic labels to identify bands</li>
                 <li>different scenes can then be classified if semantic labels are the same</li>
             </ul>
         </li>
-        <li>
-            organize bands within one spatio-temporal dataset
-        </li>
-    </ul>
-    <br>
-    <img src="img/band_references_scheme.png" alt="GRASS GIS and band reference metadata" class="stretch">
-    <p>by Maris Nartiss, Martin Landa, Markus Metz</p>
-</section>
-
-
-<section>
-    <h2>Raster band references and portable signature files</h2>
-    <ul>
-        <li>assign a band reference (semantic label) to any raster map</li>
-        <li>extended metadata for band reference</li>
-        <li>band references stored in classification signature files</li>
+        <li>organize bands within one spatio-temporal dataset</li>
         <li>signature files can be used for classification if band references match (raster values are semantically equal)</li>
     </ul>
     <br>
     <img src="img/band_references_scheme.png" alt="GRASS GIS and semantic labels" class="stretch">
-    <p>by Māris Nartišs and Martin Landa</p>
+    <p>by Maris Nartiss, Martin Landa, Markus Metz</p>
 </section>
 
 
@@ -537,12 +522,13 @@
                 <li>r.mfilter</li>
                 <li>r.slope.aspect</li>
             </ul>
-            <p> + benchmarking library</p>
+            <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ benchmarking library</p>
         </div>
         <div class="col">
-            <img src="img/gsoc/openmp.png" alt="GRASS GIS and openMP">
+            <img src="img/gsoc/openmp.png" alt="GRASS GIS and openMP" width="70%">
         </div>
     </div>
+    <p>by Aaron Saw Min Sern and Anna Petrasova</p>
     <p>Available in 8.2+</p>
     <aside class="notes">
         <ul>
@@ -551,21 +537,10 @@
             <li>Supported on all platforms, provided GRASS is compiled with OpenMP</li>
         </ul>
     </aside>
-    <p>by Aaron Saw Min Sern and Anna Petrasova</p>
 </section>
 
-<section>
-    <h2>Speed Improvements: Multi-threading with OpenMP</h2>
-    <ul>
-        <li>More tasks done in parallel in the same tool</li>
-        <li><code>nprocs</code> specifies number of cores (processes, threads)</li>
-        <li><code>memory</code> specifies RAM in MB</li>
-        <li><em>Performance</em> section in documentation describes the behavior</li>
-    </ul>
-    <img src="img/openmp_r_series_section.png" alt="GRASS GIS and r.series openMP benchmarking" class="stretch">
-    <p>by Aaron Saw Min Sern and Anna Petrasova</p>
-</section>
 
+<!-- other variant
 <section>
     <h2>New core modules using OpenMP parallelization</h2>
     <ul>
@@ -578,12 +553,23 @@
     <p>
         <img src="img/r_series_average_explanation.png" alt="GRASS GIS and r.series openMP benchmarking 2" style="height: 7ex">
     </p>
-<!--
-    <img src="img/openmp_r_series.png" alt="GRASS GIS and r.series openMP benchmarking" class="stretch">
--->
     <p>by Aaron Saw Min Sern</p>
 </section>
+-->
 
+<!-- too much for FOSS4G 2022
+<section>
+    <h2>Speed Improvements: Multi-threading with OpenMP</h2>
+    <ul>
+        <li>More tasks done in parallel in the same tool</li>
+        <li><code>nprocs</code> specifies number of cores (processes, threads)</li>
+        <li><code>memory</code> specifies RAM in MB</li>
+        <li><em>Performance</em> section in documentation describes the behavior</li>
+    </ul>
+    <img src="img/openmp_r_series_section.png" alt="GRASS GIS and r.series openMP benchmarking" class="stretch">
+    <p>by Aaron Saw Min Sern and Anna Petrasova</p>
+</section>
+-->
 
 <section>
     <h2>More parallel tools</h2>
@@ -600,7 +586,7 @@
             r.sun.daily, r.in.usgs,
             r.mapcalc.tiled, t.rast.what.aggr,
             r.connectivity.corridors, r.viewshed.exposure,
-            and 14 more
+            and <b>14</b> more
             <!-- 20 total -->
             </small>
         </li>
@@ -749,28 +735,18 @@
 
 
 <section>
-    <h2>Single-Window GUI by Linda Kladivova</h2>
+    <h2>Single-Window GUI</h2>
     <h3>Integration of results from Google Summer of Code 2021</h3>
     <img src="img/gsoc/proposal3.png" alt="GRASS GIS and single window GUI" class="stretch">
     <p>
-        Code refactoring to enable Single-Window GUI with dockable widgets.
+        One GUI window with optimized layout with dockable widgets.
     </p>
-    <p>Available in 8.2+</p>
-</section>
-
-
-<section>
-    <h2>Single-Window GUI</h2>
-    <p>
-        One window with optimized layout.
-    </p>
-    <img src="img/single_window_8.2_dark.png" alt="GRASS GIS and dark theme" class="stretch">
-    <p>Opt-in preview in 8.2: <em>Settings &gt; Preferences &gt; General</em></p>
     <p>by Linda Kladivova</p>
-    <p>Available in 8.2+</p>
+    <p>Available in 8.2+: <em>Settings &gt; Preferences &gt; General</em></p>
 </section>
 
 
+<!-- too much for FOSS4G 2022
 <section>
     <h2>Centralized Data Management</h2>
     All data manipulation centered around revamped <em>Data</em> tab.
@@ -779,7 +755,6 @@
     <p>by Linda Kladivova, Anna Petrasova, Vaclav Petras
 </section>
 
-<!-- too much for FOSS4G 2022
 <section>
     <h2>Dark Theme Support</h2>
     Interface respects system dark theme.
@@ -816,7 +791,7 @@
     <h3>Turning git commit entries into a release page</h3>
     <ul>
         <li>log message parsing, categorization for the subsection</li>
-        <li>publishing of source code and release notes</li>
+        <li>publishing of source code and auto-generated <a href="https://github.com/OSGeo/grass/releases">release notes</a></li>
     </ul>
     <img src="img/github_grass_releases.png" alt="GRASS GIS and automated software releases" class="stretch">
     <p>by Vaclav Petras (procedure support by Markus Neteler)</p>
@@ -840,6 +815,7 @@
 </section>
 
 
+<!-- too much for FOSS4G 2022
 <section>
     <h2>Hydrologic Parameters Using a Flow Direction Raster</h2>
     <em>r.accumulate</em> calculates weighted flow accumulation, subwatersheds, stream networks, and longest flow paths using a flow direction map.
@@ -847,7 +823,7 @@
     <img src="img/r_accumulate_nc_lfp_example_subwatersheds.png" alt="GRASS GIS and flow accumulation" class="stretch">
     <p>by Huidae Cho</p>
 </section>
-
+-->
 
 <section>
     <h2>Creating a Gabor filter bank</h2>
@@ -912,6 +888,7 @@
 </section>
 
 
+<!-- too much for FOSS4G 2022
 <section>
     <h2>More data: Sentinel, THREDDS, &hellip;, netCDF, CSV</h2>
     <p>
@@ -931,6 +908,7 @@
             NC&nbsp;State University,
             CONICET,
             Norwegian Institute for Nature Research,
+   -->
             <!--
             Luca&nbsp;Delucchi (Fondazione Edmund Mach),
             Martin Landa (OpenGeoLabs),
@@ -943,11 +921,12 @@
             Veronica&nbsp;Andreo (CONICET),
             Stefan&nbsp;Blumentrath (Norwegian Institute for Nature Research - NINA)
             -->
+   <!--
             &hellip;
         </small>
     </p>
 </section>
-
+-->
 
 <section>
     <h2>Visual Exposure to a Defined Source</h2>
@@ -1263,7 +1242,7 @@
 </section>
 
 <section>
-    <h2>Sponsoring</h2>
+    <h2>Sponsoring: why needed?</h2>
     <div class="columns">
         <div class="column" style="width:63%">
             <br>
@@ -1272,7 +1251,7 @@
                 <ul>
                     <li>organize face-to-face coding sessions (sprints)</li>
                     <li>finance infrastucture needs (web site, etc)</li>
-                    <li>pay developers to implement new features and fix specific important bugs</li>
+                    <li>pay developers to implement new features and fix specific important bugs (grants)</li>
                 </ul>
             </ul>
         </div>
@@ -1302,11 +1281,6 @@
             </ul>
         </li>
     </ul>
-    <img src="img/osgeo_codesprint_2018.jpg" alt="GRASS GIS and Bonn code sprint 2018" class="stretch">
-</section>
-
-<section>
-    <h2>Sponsoring</h2>
     <img src="img/opencollective_page.png" alt="GRASS GIS and openCollective donations" width="40%" style="float:right">
     <br><br>
     <blockquote>
@@ -1319,7 +1293,7 @@
 
 
 <section>
-    <h2>Student grants program</h2>
+    <h2>Student grants program: coding for money!</h2>
     <br>
     <ul>
         <li>GRASS GIS offers a limited number of student grants.</li>
