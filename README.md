@@ -6,7 +6,7 @@
 
 See each slide deck for the list of authors.
 
-&copy; 2021 The Authors
+&copy; 2022 The Authors
 
 License (dual licensed, i.e. pick the one which works for you):
 * [Creative Commons Attribution-ShareAlike 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/) (CC BY-SA)
