@@ -1,6 +1,6 @@
 # GRASS GIS Talks
 
-* FOSS4G 2022 - Florence: [State of GRASS GIS](https://neteler.github.io/grass-gis-talks/foss4g2022.html)
+* FOSS4G 2022 - Florence: [State of GRASS GIS](https://neteler.github.io/grass-gis-talks-markus/foss4g2022.html)
 
 ## Authors, Copyright, and License
 
