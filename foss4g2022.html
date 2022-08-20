@@ -178,12 +178,9 @@
     </textarea>
 </section>
 
-<!--
-<section id="GRASS general">
--->
 
 <section>
-    <h2>Which GRASS?</h2>
+    <h2>For newcomers: which GRASS GIS?</h2>
     <div class="columns">
         <div class="column" style="width:59%">
             <ul>
@@ -198,6 +195,8 @@
     </div>
 </section>
 
+
+<!-- skipping the obvious
 
 <section>
     <h2>GRASS GIS is about people: Community</h2>
@@ -264,6 +263,8 @@
     <p><em>Python and GRASS</em></p>
 </section>
 
+-->
+
 
 <section>
     <h2>All-in-one software suite</h2>
@@ -278,8 +279,136 @@
 
 
 <section>
-    <h2>Integration of results from Google Summer of Code 2021</h2>
-    <h3>Integration with Jupyter Notebooks</h3>
+    <h2>Roadmap</h2>
+    <ul>
+        <li>
+            7.8.7, Feb 2022
+            <small>Stability and fixes.</small>
+        </li>
+        <li>
+            8.0.0, Feb 2022
+            <small>New startup, data management.</small>
+        </li>
+        <li>
+            8.0.2, May 2022
+            <small>Stability and fixes.</small>
+        </li>
+        <li>
+            8.2.0, June 2022
+            <small>Jupyter, parallel r.neighbors, &hellip;</small>
+        </li>
+       <!--
+        <li>
+            8.3.0, Spring 2023
+            <small>Single window interface as the default.</small>
+        </li>
+        -->
+    </ul>
+    <p><small>
+        major.minor.micro &ndash; semantic versioning:<br>
+        &ndash; micro (x.y.z) brings <b>fixes</b>,<br>
+        &ndash; minor (x.y) brings <b>features</b>,<br>
+        &ndash; major (x) brings <b>features and possibly backward incompatible changes</b>
+    </small></p>
+    <br>
+    <img src="img/splash_screen.png" alt="GRASS GIS splash screen" class="stretch">
+</section>
+
+<!--  Vero's version:
+<section>
+    <h2>GRASS GIS 8</h2>
+    <ul>
+        <li>Roadmap:
+            <ul>
+                <li>7.8.6 Fall 2021
+                    <ul>
+                        <li>Old but still good.</li>
+                    </ul>
+                </li>
+                <li>8.0.0 Fall 2021
+                    <ul>
+                        <li>First release in a new era.</li>
+                    </ul>
+                </li>
+                <li>8.0.1 Winter 2021
+                    <ul>
+                        <li>What did we miss?</li>
+                    </ul>
+                </li>
+                <li>8.2.0 Spring 2022
+                    <ul>
+                        <li>Enjoy the GSoC 2021 results!</li>
+                    </ul>
+                </li>
+                <li>8.4.0 later in 2022
+                    <ul>
+                        <li>Stability boost!</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+    <br>
+    <img src="img/splash_screen.png" alt="GRASS GIS splash screen" class="stretch">
+</section>
+
+-->
+
+<section>
+    <h1>Exciting new features in GRASS 8.2+</h1>
+    <i class="fa fa-rocket fa-4x"></i>
+</section>
+
+<!-- too much for FOSS4G 2022
+<section>
+    <h2>Skeletons and Centerlines</h2>
+    <em>v.voronoi</em> tool can now create area skeletons and centerlines.
+    <img src="img/lake_skeleton_naip.png" alt="GRASS GIS and vector skeletonising" class="stretch">
+    <p>by Markus Metz
+</section>
+
+<section>
+    <h2>Latest PROJ and GDAL</h2>
+    <ul>
+        <li>Support for PROJ &gt;=6 added.</li>
+        <li>Support for GDAL &gt;=3 added.</li>
+        <li>WKT2 can be used for CRS definitions.</li>
+        <li>High-accuracy coordinate transformations supported.</li>
+    </ul>
+    <img src="img/natural_europe.png" alt="natural Europe map" class="stretch">
+    <p>by Markus Metz</p>
+    <aside class="notes">
+        GRASS is currently supporting the latest versions of PROJ and GDAL.
+        All the fancy new high-accuracy coordinate transformation methods are supported.
+        The WKT2 can be used to define a CRS and is printed as CRS info by g.proj.
+        Some new PROJ 8 functionality is not yet supported.
+        For example, automated download of datum transformation grids is yet missing.
+    </aside>
+</section>
+
+-->
+
+<section>
+    <h2>Integration of GRASS GIS and Jupyter Notebooks by Caitlin Haedrich</h2>
+    <h3>Integration of results from Google Summer of Code 2021</h3>
+    <img src="img/gsoc/InteractiveVectorMaps.PNG" alt="GRASS GIS and Jupyter notebooks" class="stretch">
+    <p>
+        New Python library that simplifies the launch of GRASS GIS in Jupyter and the interactive display of raster/vector data.
+    </p>
+    <aside class="notes">
+        <ul>
+            <li>Easy GRASS GIS initialization</li>
+            <li>More intuitive API for rendering</li>
+            <li>Classic rendering with d.* commands, rendering with webmap and zooming, also 3D rendering</li>
+            <li>Available now as experimental, coming in 8.2 officially</li>
+        </ul>
+    </aside>
+</section>
+
+
+<section>
+    <h2>New! Integration with Jupyter Notebooks</h2>
+    <h3>Integration of results from Google Summer of Code 2021</h3>
     <ul>
         <li>Notebooks: Mix of text, code, results, images, &hellip;</li>
         <li>Usage: Prototyping, reproducibility, tutorials, &hellip;</li>
@@ -291,8 +420,8 @@
 
 
 <section>
-    <h2>Integration of results from Google Summer of Code 2021</h2>
-    <h3>Integration with Jupyter Notebooks</h3>
+    <h2>New! Integration with Jupyter Notebooks</h2>
+    <h3>Integration of results from Google Summer of Code 2021</h3>
     <p>
         Web map with base maps, zooming, customizations, &hellip;
     </p>
@@ -305,8 +434,8 @@
 
 
 <section>
-    <h2>Integration of results from Google Summer of Code 2021</h2>
-    <h3>Integration with Jupyter Notebooks</h3>
+    <h2>New! Integration with Jupyter Notebooks</h2>
+    <h3>Integration of results from Google Summer of Code 2021</h3>
     <p>
         Time-series visualization
     </p>
@@ -316,8 +445,8 @@
 
 
 <section>
-    <h2>Integration of results from Google Summer of Code 2021</h2>
-    <h3>Integration with Jupyter Notebooks</h3>
+    <h2>New! Integration with Jupyter Notebooks</h2>
+    <h3>Integration of results from Google Summer of Code 2021</h3>
     <p>
         3D visualization
     </p>
@@ -327,10 +456,10 @@
 
 
 <section>
-    <h2>Semantic Labels for Rasters</h2>
+    <h2>New! Semantic Labels for Rasters</h2>
     <ul>
         <li>
-            attach a labels to raster maps
+            attaches meaningful labels to raster maps
             <small>(e.g., <code>S2_1</code> or <code>red</code>)</small>
             <ul>
                 <li>image classification can use sematic labels to identify bands</li>
@@ -348,44 +477,54 @@
 
 
 <section>
-    <h2>Sentinel, THREDDS, &hellip;, netCDF, CSV</h2>
-    <p>
-        Automated download and import of common datasets
-        <small>
-            i.sentinel, i.modis, i.landsat, r.in.usgs, r.in.nasadem, m.crawl.thredds, t.rast.import.netcdf, &hellip;
-        </small>
-    </p>
-    <img src="img/usgs_ned_naip_3d.png" alt="GRASS GIS and NAIP 3D" class="stretch">
-    <p>
-        <small>
-            by
-            Fondazione Edmund Mach,
-            OpenGeoLabs,
-            mundialis,
-            GSoC,
-            NC&nbsp;State University,
-            CONICET,
-            Norwegian Institute for Nature Research,
-            <!--
-            Luca&nbsp;Delucchi (Fondazione Edmund Mach),
-            Martin Landa (OpenGeoLabs),
-            Anika&nbsp;Weinmann (mundialis),
-            Guido&nbsp;Riembauer (mundialis),
-            Roberta&nbsp;Fagandini (GSoC),
-            Zechariah&nbsp;Krautwurst (GSoC),
-            Anna&nbsp;Petrasova (NC&nbsp;State University),
-            Vaclav&nbsp;Petras (NC&nbsp;State University),
-            Veronica&nbsp;Andreo (CONICET),
-            Stefan&nbsp;Blumentrath (Norwegian Institute for Nature Research - NINA)
-            -->
-            &hellip;
-        </small>
-    </p>
+    <h2>Raster band references and portable signature files</h2>
+    <ul>
+        <li>assign a band reference (semantic label) to any raster map</li>
+        <li>extended metadata for band reference</li>
+        <li>band references stored in classification signature files</li>
+        <li>signature files can be used for classification if band references match (raster values are semantically equal)</li>
+    </ul>
+    <br>
+    <img src="img/band_references_scheme.png" alt="GRASS GIS and semantic labels" class="stretch">
+    <p>by Māris Nartišs and Martin Landa</p>
 </section>
 
+
+<!-- too much for FOSS4G 2022
 <section>
-    <h2>Integration of results from Google Summer of Code 2021</h2>
-    <h3>OpenMP parallelization by Aaron Saw Min Sern</h3>
+    <h2>Faster External Data Links</h2>
+    <em>r.external</em> links (opens) external raster data (GeoTiffs, &hellip;) faster.
+    <br>
+    <small>(2-5&times; faster, or almost no time for some workflows)</small>
+    <br>
+    <img src="img/r_external.png" alt="GRASS GIS and external file linking" class="stretch">
+    <p>by Markus Metz</p>
+    <p>Great for workflows when only portion of the data is processed in GRASS GIS.</p>
+</section>
+-->
+
+
+<section>
+    <h2>Fast LiDAR data import with PDAL</h2>
+    <ul>
+        <li>import of any point dimension (including user defined ones e.g. from PDAL filters)</li>
+        <li>support of 19 binning methods (including eigenvalues)</li>
+        <li>point filtering by values in any dimension</li>
+    </ul>
+    <img src="img/scan_angle.png" alt="GRASS GIS and LiDAR 1" width="47%"><img src="img/elevation.png" alt="GRASS GIS and LiDAR 2" width="50%">
+    <p>by Vaclav Petras and Māris Nartišs</p>
+</section>
+
+
+<section>
+    <h1>More parallelization in GRASS 8.2+</h1>
+    <i class="fa fa-rocket fa-4x"></i>
+</section>
+
+
+<section>
+    <h2>OpenMP parallelization</h2>
+    <h3>Integration of results from Google Summer of Code 2021</h3>
     <div class="container">
         <div class="col">
             <ul>
@@ -412,6 +551,7 @@
             <li>Supported on all platforms, provided GRASS is compiled with OpenMP</li>
         </ul>
     </aside>
+    <p>by Aaron Saw Min Sern and Anna Petrasova</p>
 </section>
 
 <section>
@@ -423,6 +563,7 @@
         <li><em>Performance</em> section in documentation describes the behavior</li>
     </ul>
     <img src="img/openmp_r_series_section.png" alt="GRASS GIS and r.series openMP benchmarking" class="stretch">
+    <p>by Aaron Saw Min Sern and Anna Petrasova</p>
 </section>
 
 <section>
@@ -440,7 +581,7 @@
 <!--
     <img src="img/openmp_r_series.png" alt="GRASS GIS and r.series openMP benchmarking" class="stretch">
 -->
-    <p>by Aaron Saw Min Sern in 8.2</p>
+    <p>by Aaron Saw Min Sern</p>
 </section>
 
 
@@ -474,7 +615,9 @@
     <img src="img/piemonte_shaded_elevation.png" alt="GRASS GIS and Piemonte shaded elevation" class="stretch">
 </section>
 
-<!--
+
+<!-- nice but too much for FOSS4G 2022
+
 <section>
     <h1>Cool stuff that has been there for a while...</h1>
     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Noto_Emoji_Pie_1f60e.svg/512px-Noto_Emoji_Pie_1f60e.svg.png" alt="Emoji" width="30%">
@@ -576,103 +719,14 @@
     <img src="img/grass_gis.svg" alt="GRASS GIS logo" class="stretch">
 </section>
 
-</section>
-
 -->
 
 
 <section>
-    <h2>Visual Exposure to a Defined Source</h2>
-    <em>r.viewshed.exposure</em> - Weighted cumulative viewshed analysis defining visual exposure to a source
-    <br>
-    <img src="img/r_viewshed_exposure.png" alt="GRASS GIS and viewshed exposure" class="stretch">
-    <p>by Zofie Cimburova and Stefan Blumentrath</p>
-</section>
-
-<!--
-<section id="GRASS GIS 8">
--->
-
-<section>
-    <h2>Roadmap</h2>
-    <ul>
-        <li>
-            7.8.7, Feb 2022
-            <small>Stability and fixes.</small>
-        </li>
-        <li>
-            8.0.0, Feb 2022
-            <small>New startup, data management.</small>
-        </li>
-        <li>
-            8.0.2, May 2022
-            <small>Stability and fixes.</small>
-        </li>
-        <li>
-            8.2.0, June 2022
-            <small>Jupyter, parallel r.neighbors, &hellip;</small>
-        </li>
-       <!--
-        <li>
-            8.3.0, Spring 2023
-            <small>Single window interface as the default.</small>
-        </li>
-        -->
-    </ul>
-    <p><small>
-        major.minor.micro &ndash; semantic versioning:<br>
-        &ndash; micro (x.y.z) brings <b>fixes</b>,<br>
-        &ndash; minor (x.y) brings <b>features</b>,<br>
-        &ndash; major (x) brings <b>features and possibly backward incompatible changes</b>
-    </small></p>
-    <br>
-    <img src="img/splash_screen.png" alt="GRASS GIS splash screen" class="stretch">
-</section>
-
-<!-- 
-<section>
-    <h2>GRASS GIS 8</h2>
-    <ul>
-        <li>Roadmap:
-            <ul>
-                <li>7.8.6 Fall 2021
-                    <ul>
-                        <li>Old but still good.</li>
-                    </ul>
-                </li>
-                <li>8.0.0 Fall 2021
-                    <ul>
-                        <li>First release in a new era.</li>
-                    </ul>
-                </li>
-                <li>8.0.1 Winter 2021
-                    <ul>
-                        <li>What did we miss?</li>
-                    </ul>
-                </li>
-                <li>8.2.0 Spring 2022
-                    <ul>
-                        <li>Enjoy the GSoC 2021 results!</li>
-                    </ul>
-                </li>
-                <li>8.4.0 later in 2022
-                    <ul>
-                        <li>Stability boost!</li>
-                    </ul>
-                </li>
-            </ul>
-        </li>
-    </ul>
-    <br>
-    <img src="img/splash_screen.png" alt="GRASS GIS splash screen" class="stretch">
-</section>
-
--->
-
-<section>
-    <h1>Exciting new features in GRASS 8</h1>
+    <h1>A better GUI experience in GRASS 8.2+</h1>
     <i class="fa fa-rocket fa-4x"></i>
 </section>
+
 
 <section>
     <h2>Improved First-time User Experience</h2>
@@ -693,102 +747,10 @@
     </p>
 </section>
 
-<section>
-    <h2>Centralized Data Management</h2>
-    All data manipulation centered around revamped <em>Data</em> tab.
-    <br>
-    <img src="img/data_catalog_isolines.png" alt="GRASS GIS and isolines" class="stretch">
-    <p>by Linda Kladivova, Anna Petrasova, Vaclav Petras
-</section>
 
 <section>
-    <h2>Dark Theme Support</h2>
-    Interface respects system dark theme.
-    <br>
-    <img src="img/dark_theme_v_clip.png" alt="GRASS GIS and dark theme" class="stretch">
-    <p>by Anna Petrasova, Nicklas Larsson
-</section>
-
-<section>
-    <h2>Raster band references and portable signature files</h2>
-    <ul>
-        <li>assign a band reference (semantic label) to any raster map</li>
-        <li>extended metadata for band reference</li>
-        <li>band references stored in classification signature files</li>
-        <li>signature files can be used for classification if band references match (raster values are semantically equal)</li>
-    </ul>
-    <br>
-    <img src="img/band_references_scheme.png" alt="GRASS GIS and semantic labels" class="stretch">
-    <p>by Māris Nartišs and Martin Landa</p>
-</section>
-
-<section>
-    <h2>Faster External Data Links</h2>
-    <em>r.external</em> links (opens) external raster data (GeoTiffs, &hellip;) faster.
-    <br>
-    <small>(2-5&times; faster, or almost no time for some workflows)</small>
-    <br>
-    <img src="img/r_external.png" alt="GRASS GIS and external file linking" class="stretch">
-    <p>by Markus Metz</p>
-    <p>Great for workflows when only portion of the data is processed in GRASS GIS.</p>
-</section>
-
-<section>
-    <h2>LiDAR data import with PDAL</h2>
-    <ul>
-        <li>import of any point dimension (including user defined ones e.g. from PDAL filters)</li>
-        <li>support of 19 binning methods (including eigenvalues)</li>
-        <li>point filtering by values in any dimension</li>
-    </ul>
-    <img src="img/scan_angle.png" alt="GRASS GIS and LiDAR 1" width="47%"><img src="img/elevation.png" alt="GRASS GIS and LiDAR 2" width="50%">
-    <p>by Vaclav Petras and Māris Nartišs</p>
-</section>
-
-<!--
-<section>
-    <h2>Skeletons and Centerlines</h2>
-    <em>v.voronoi</em> tool can now create area skeletons and centerlines.
-    <img src="img/lake_skeleton_naip.png" alt="GRASS GIS and vector skeletonising" class="stretch">
-    <p>by Markus Metz
-</section>
-
-<section>
-    <h2>Latest PROJ and GDAL</h2>
-    <ul>
-        <li>Support for PROJ &gt;=6 added.</li>
-        <li>Support for GDAL &gt;=3 added.</li>
-        <li>WKT2 can be used for CRS definitions.</li>
-        <li>High-accuracy coordinate transformations supported.</li>
-    </ul>
-    <img src="img/natural_europe.png" alt="natural Europe map" class="stretch">
-    <p>by Markus Metz</p>
-    <aside class="notes">
-        GRASS is currently supporting the latest versions of PROJ and GDAL.
-        All the fancy new high-accuracy coordinate transformation methods are supported.
-        The WKT2 can be used to define a CRS and is printed as CRS info by g.proj.
-        Some new PROJ 8 functionality is not yet supported.
-        For example, automated download of datum transformation grids is yet missing.
-    </aside>
-</section>
-
--->
-
-<section>
-    <h2>Improved and robust code quality checks: GitHub Actions</h2>
-    <ul>
-        <li>Python code formatted by Black.</li>
-        <li>Python code checked against Flake8.</li>
-        <li>Most of warnings in C code removed and now checked.</li>
-        <li>Code tested with CodeQL.</li>
-        <li>Flake8 and Black checks also for Addons.</li>
-    </ul>
-    <img src="img/code_in_vscodium.png" alt="GRASS GIS and code editing in VS Codium" class="stretch">
-    <p>by Nicklas Larsson, Vaclav Petras, Anna Petrasova, Carmen Tawalika, ...
-</section>
-
-<section>
-    <h2>Integration of results from Google Summer of Code 2021</h2>
-    <h3>Single-Window GUI by Linda Kladivova</h3>
+    <h2>Single-Window GUI by Linda Kladivova</h2>
+    <h3>Integration of results from Google Summer of Code 2021</h3>
     <img src="img/gsoc/proposal3.png" alt="GRASS GIS and single window GUI" class="stretch">
     <p>
         Code refactoring to enable Single-Window GUI with dockable widgets.
@@ -808,28 +770,65 @@
     <p>Available in 8.2+</p>
 </section>
 
+
 <section>
-    <h2>Integration of results from Google Summer of Code 2021</h2>
-    <h3>Integration of GRASS GIS and Jupyter Notebooks by Caitlin Haedrich</h3>
-    <img src="img/gsoc/InteractiveVectorMaps.PNG" alt="GRASS GIS and Jupyter notebooks" class="stretch">
-    <p>
-        New Python library that simplifies the launch of GRASS GIS in Jupyter and the interactive display of raster/vector data.
-    </p>
-    <aside class="notes">
-        <ul>
-            <li>Simpler GRASS GIS initialization</li>
-            <li>More intuitive API for rendering</li>
-            <li>Classic rendering with d.* commands, rendering with webmap and zooming, also 3D rendering</li>
-            <li>Available now as experimental, coming in 8.2 officially</li>
-        </ul>
-    </aside>
+    <h2>Centralized Data Management</h2>
+    All data manipulation centered around revamped <em>Data</em> tab.
+    <br>
+    <img src="img/data_catalog_isolines.png" alt="GRASS GIS and isolines" class="stretch">
+    <p>by Linda Kladivova, Anna Petrasova, Vaclav Petras
 </section>
+
+<!-- too much for FOSS4G 2022
+<section>
+    <h2>Dark Theme Support</h2>
+    Interface respects system dark theme.
+    <br>
+    <img src="img/dark_theme_v_clip.png" alt="GRASS GIS and dark theme" class="stretch">
+    <p>by Anna Petrasova, Nicklas Larsson
+</section>
+-->
+
+
+<section>
+    <h1>Code quality and automated releases</h1>
+    <i class="fa fa-rocket fa-4x"></i>
+</section>
+
+
+<section>
+    <h2>Improved and robust code quality checks: GitHub Actions</h2>
+    <ul>
+        <li>Python code formatted by Black.</li>
+        <li>Python code checked against Flake8.</li>
+        <li>Most of warnings in C code removed and now checked.</li>
+        <li>Code tested with CodeQL.</li>
+        <li>Flake8 and Black checks also for Addons.</li>
+    </ul>
+    <img src="img/code_in_vscodium.png" alt="GRASS GIS and code editing in VS Codium" class="stretch">
+    <p>by Nicklas Larsson, Vaclav Petras, Anna Petrasova, Carmen Tawalika, ...
+</section>
+
+
+<section>
+    <h2>Automated releases from GitHub</h2>
+    <br>
+    <h3>Turning git commit entries into a release page</h3>
+    <ul>
+        <li>log message parsing, categorization for the subsection</li>
+        <li>publishing of source code and release notes</li>
+    </ul>
+    <img src="img/github_grass_releases.png" alt="GRASS GIS and automated software releases" class="stretch">
+    <p>by Vaclav Petras (procedure support by Markus Neteler)</p>
+</section>
+
 
 <section>
     <h1>Many new addons contributed by the community</h1>
     <br>
     <img src="img/bonn_osgeo_code_sprint_2018.jpg" alt="GRASS GIS code sprint 2018 in Bonn" width="55%">
 </section>
+
 
 <section>
     <h2>Spatial Query of Projections</h2>
@@ -840,6 +839,7 @@
     <p>by Huidae Cho</p>
 </section>
 
+
 <section>
     <h2>Hydrologic Parameters Using a Flow Direction Raster</h2>
     <em>r.accumulate</em> calculates weighted flow accumulation, subwatersheds, stream networks, and longest flow paths using a flow direction map.
@@ -847,6 +847,7 @@
     <img src="img/r_accumulate_nc_lfp_example_subwatersheds.png" alt="GRASS GIS and flow accumulation" class="stretch">
     <p>by Huidae Cho</p>
 </section>
+
 
 <section>
     <h2>Creating a Gabor filter bank</h2>
@@ -857,12 +858,14 @@
     <p>by Owen Smith</p>
 </section>
 
+
 <section>
     <h2>Ecological applications</h2>
     <p><em>r.suitability.regions</em> allows to identify suitable regions, e.g., for endangered species, starting from suitability maps.</p>
     <img src="img/r_suitability_suit002.png" alt="GRASS GIS and eco-suitability" class="stretch">
     <p>by Paulo van Breugel</p>
 </section>
+
 
 <section>
     <h2>Weighted layers for dasymetric mapping</h2>
@@ -871,12 +874,14 @@
     <p>by Charlotte Flasse, Tais Grippa and Safa Fennia. <a href="https://doi.org/10.5194/isprs-archives-XLVI-4-W2-2021-55-2021">DOI.</a></p>
 </section>
 
+
 <section>
     <h2>Can you see that landslide??</h2>
     <p><em>r.survey</em> allows to assess whether objects of certain size could be detected by an observer moving along roads or sitting on a flying object</p>
     <img src="img/r_survey.jpg" alt="GRASS GIS and r.survey" class="stretch">
     <p>by Ivan Marchesini</p>
 </section>
+
 
 <section>
     <h2>Tap directly into FAIR data warehouses</h2>
@@ -906,9 +911,55 @@
     </small></p>
 </section>
 
-<!-- 
+
+<section>
+    <h2>More data: Sentinel, THREDDS, &hellip;, netCDF, CSV</h2>
+    <p>
+        Automated download and import of common datasets
+        <small>
+            i.sentinel, i.modis, i.landsat, r.in.usgs, r.in.nasadem, m.crawl.thredds, t.rast.import.netcdf, &hellip;
+        </small>
+    </p>
+    <img src="img/usgs_ned_naip_3d.png" alt="GRASS GIS and NAIP 3D" class="stretch">
+    <p>
+        <small>
+            by
+            Fondazione Edmund Mach,
+            OpenGeoLabs,
+            mundialis,
+            GSoC,
+            NC&nbsp;State University,
+            CONICET,
+            Norwegian Institute for Nature Research,
+            <!--
+            Luca&nbsp;Delucchi (Fondazione Edmund Mach),
+            Martin Landa (OpenGeoLabs),
+            Anika&nbsp;Weinmann (mundialis),
+            Guido&nbsp;Riembauer (mundialis),
+            Roberta&nbsp;Fagandini (GSoC),
+            Zechariah&nbsp;Krautwurst (GSoC),
+            Anna&nbsp;Petrasova (NC&nbsp;State University),
+            Vaclav&nbsp;Petras (NC&nbsp;State University),
+            Veronica&nbsp;Andreo (CONICET),
+            Stefan&nbsp;Blumentrath (Norwegian Institute for Nature Research - NINA)
+            -->
+            &hellip;
+        </small>
+    </p>
 </section>
 
+
+<section>
+    <h2>Visual Exposure to a Defined Source</h2>
+    <em>r.viewshed.exposure</em> - Weighted cumulative viewshed analysis defining visual exposure to a source
+    <br>
+    <img src="img/r_viewshed_exposure.png" alt="GRASS GIS and viewshed exposure" class="stretch">
+    <p>by Zofie Cimburova and Stefan Blumentrath</p>
+</section>
+
+
+
+<!-- too much for FOSS4G 2022
 
 <section id="GRASS for Remote Sensing">
 
@@ -1137,7 +1188,6 @@
 
 </section>
 
-
 <section id="Resources">
 <section>
 <h2>Plenty of resources</h2>
@@ -1177,12 +1227,9 @@
 
 -->
 
-<!-- 
-<section id="Get involved">
---> 
 
 <section>
-    <h1>Get involved! All contributions are welcome!</h1>
+    <h1>Get involved! Your contribution is welcome!</h1>
     <img src="img/bonn_osgeo_code_sprint_2018_fotowall.jpg" alt="GRASS GIS and Bonn fotowall" class="stretch">
 </section>
 
@@ -1270,8 +1317,9 @@
     <p><a href="https://opencollective.com/grass">https://opencollective.com/grass</a></p>
 </section>
 
+
 <section>
-    <h2>Student grant program</h2>
+    <h2>Student grants program</h2>
     <br>
     <ul>
         <li>GRASS GIS offers a limited number of student grants.</li>
@@ -1282,21 +1330,7 @@
     <p><a href="https://grasswiki.osgeo.org/wiki/Student_Grants">https://grasswiki.osgeo.org/wiki/Student_Grants</a></p>
 </section>
 
-<section>
-    <h2>Automated releases from GitHub</h2>
-    <br>
-    <h3>Turning git commit entries into a release page</h3>
-    <ul>
-        <li>log message parsing, categorization for the subsection</li>
-        <li>publishing of source code and release notes</li>
-    </ul>
-    <img src="img/github_grass_releases.png" alt="GRASS GIS and automated software releases" class="stretch">
-    <p>by Vaclav Petras (procedure support by Markus Neteler)</p>
-</section>
 
-<!-- 
-</section>
--->
 
 <section>
     <h1>Thanks for your attention!!</h1>
@@ -1308,131 +1342,131 @@
     <a href="https://twitter.com/MarkusNeteler"><i class="fa fa-twitter"></i> MarkusNeteler</a><br>
 </section>
 
-            </div>
         </div>
+    </div>
 
-        <script src="dist/reveal.js"></script>
-        <script src="plugin/notes/notes.js"></script>
-        <script src="plugin/markdown/markdown.js"></script>
-        <script src="plugin/highlight/highlight.js"></script>
-        <script src="plugin/math/math.js"></script>
-        <script src="plugin/chalkboard/plugin.js"></script>
-        <script>
+    <script src="dist/reveal.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script src="plugin/math/math.js"></script>
+    <script src="plugin/chalkboard/plugin.js"></script>
+    <script>
 
-            // Full list of configuration options available here:
-            // https://github.com/hakimel/reveal.js#configuration
-            Reveal.initialize({
-                hash: true,
-                // Display controls in the bottom right corner
-                controls: true,
+        // Full list of configuration options available here:
+        // https://github.com/hakimel/reveal.js#configuration
+        Reveal.initialize({
+            hash: true,
+            // Display controls in the bottom right corner
+            controls: true,
 
-                // Display a presentation progress bar
-                progress: true,
+            // Display a presentation progress bar
+            progress: true,
 
-                center: true,
+            center: true,
 
-                // Display the page number of the current slide
-                slideNumber: true,
+            // Display the page number of the current slide
+            slideNumber: true,
 
-                // Enable the slide overview mode
-                overview: true,
+            // Enable the slide overview mode
+            overview: true,
 
-                // Turns fragments on and off globally
-                fragments: true,
+            // Turns fragments on and off globally
+            fragments: true,
 
-                // The "normal" size of the presentation, aspect ratio will be preserved
-                // when the presentation is scaled to fit different resolutions. Can be
-                // specified using percentage units.
-                // width: 960,
-                // height: 700,
+            // The "normal" size of the presentation, aspect ratio will be preserved
+            // when the presentation is scaled to fit different resolutions. Can be
+            // specified using percentage units.
+            // width: 960,
+            // height: 700,
 
-                // Factor of the display size that should remain empty around the content
-                margin: 0.05,  // increase?
+            // Factor of the display size that should remain empty around the content
+            margin: 0.05,  // increase?
 
-                // Bounds for smallest/largest possible scale to apply to content
-                minScale: 0.5,
-                maxScale: 5.0,
+            // Bounds for smallest/largest possible scale to apply to content
+            minScale: 0.5,
+            maxScale: 5.0,
 
-                // Push each slide change to the browser history
-                history: true,
-                // Enable keyboard shortcuts for navigation
-                keyboard: true,
+            // Push each slide change to the browser history
+            history: true,
+            // Enable keyboard shortcuts for navigation
+            keyboard: true,
 
-                // Vertical centering of slides
-                center: true,
+            // Vertical centering of slides
+            center: true,
 
-                // Enables touch navigation on devices with touch input
-                touch: true,
+            // Enables touch navigation on devices with touch input
+            touch: true,
 
-                // Loop the presentation
-                loop: false,
-                // Flags if the presentation is running in an embedded mode,
-                // i.e. contained within a limited portion of the screen
-                embedded: false,
+            // Loop the presentation
+            loop: false,
+            // Flags if the presentation is running in an embedded mode,
+            // i.e. contained within a limited portion of the screen
+            embedded: false,
 
-                // Number of milliseconds between automatically proceeding to the
-                // next slide, disabled when set to 0, this value can be overwritten
-                // by using a data-autoslide attribute on your slides
-                autoSlide: 0,
+            // Number of milliseconds between automatically proceeding to the
+            // next slide, disabled when set to 0, this value can be overwritten
+            // by using a data-autoslide attribute on your slides
+            autoSlide: 0,
 
-                // Stop auto-sliding after user input
-                autoSlideStoppable: true,
+            // Stop auto-sliding after user input
+            autoSlideStoppable: true,
 
-                // Enable slide navigation via mouse wheel
-                mouseWheel: false,
+            // Enable slide navigation via mouse wheel
+            mouseWheel: false,
 
-                // Hides the address bar on mobile devices
-                hideAddressBar: true,
+            // Hides the address bar on mobile devices
+            hideAddressBar: true,
 
-                // Opens links in an iframe preview overlay
-                previewLinks: false,
+            // Opens links in an iframe preview overlay
+            previewLinks: false,
 
-                // Slide transition
-                transition: 'convex', // default/none/slide/concave/convex/zoom
+            // Slide transition
+            transition: 'convex', // default/none/slide/concave/convex/zoom
 
-                // Transition speed
-                transitionSpeed: 'default', // default/fast/slow
+            // Transition speed
+            transitionSpeed: 'default', // default/fast/slow
 
-                // Transition style for full page slide backgrounds
-                backgroundTransition: 'none', // default/none/slide/concave/convex/zoom
+            // Transition style for full page slide backgrounds
+            backgroundTransition: 'none', // default/none/slide/concave/convex/zoom
 
-                // Number of slides away from the current that are visible
-                viewDistance: 3,
+            // Number of slides away from the current that are visible
+            viewDistance: 3,
 
-                // Parallax background image
-                //parallaxBackgroundImage: '', // e.g. "'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg'"
+            // Parallax background image
+            //parallaxBackgroundImage: '', // e.g. "'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg'"
 
-                // Parallax background size
-                //parallaxBackgroundSize: '' // CSS syntax, e.g. "2100px 900px"
+            // Parallax background size
+            //parallaxBackgroundSize: '' // CSS syntax, e.g. "2100px 900px"
 
-                chalkboard: {
-                    boardmarkerWidth: 3,
-                    chalkWidth: 7,
-                    chalkEffect: 1.0,
-                    src: null,
-                    readOnly: undefined,
-                    toggleChalkboardButton: true,
-                    toggleNotesButton: true,
-                    boardmarkers : [
-                        { color: 'rgba(220,20,60,1)', cursor: 'url(' + path + 'img/boardmarker-red.png), auto'},
-                        { color: 'rgba(255,140,0,1)', cursor: 'url(' + path + 'img/boardmarker-orange.png), auto'},
-                    ]
-                },
-
-                math: {
-                    mathjax: 'https://cdn.jsdelivr.net/gh/mathjax/mathjax@2.7.8/MathJax.js',
-                    config: 'TeX-AMS_HTML-full',
-                    // pass other options into `MathJax.Hub.Config()`
-                    TeX: { Macros: { RR: "{\\bf R}" } }
-                },
-
-                plugins: [
-                    RevealMath,
-                    RevealHighlight,
-                    RevealMarkdown,
-                    RevealChalkboard
+            chalkboard: {
+                boardmarkerWidth: 3,
+                chalkWidth: 7,
+                chalkEffect: 1.0,
+                src: null,
+                readOnly: undefined,
+                toggleChalkboardButton: true,
+                toggleNotesButton: true,
+                boardmarkers : [
+                    { color: 'rgba(220,20,60,1)', cursor: 'url(' + path + 'img/boardmarker-red.png), auto'},
+                    { color: 'rgba(255,140,0,1)', cursor: 'url(' + path + 'img/boardmarker-orange.png), auto'},
                 ]
-            });
-        </script>
-    </body>
+            },
+
+            math: {
+                mathjax: 'https://cdn.jsdelivr.net/gh/mathjax/mathjax@2.7.8/MathJax.js',
+                config: 'TeX-AMS_HTML-full',
+                // pass other options into `MathJax.Hub.Config()`
+                TeX: { Macros: { RR: "{\\bf R}" } }
+            },
+
+            plugins: [
+                RevealMath,
+                RevealHighlight,
+                RevealMarkdown,
+                RevealChalkboard
+            ]
+        });
+    </script>
+</body>
 </html>
