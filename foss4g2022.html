@@ -169,11 +169,9 @@
     <textarea data-template>
     ## Overview of this talk
         - Which GRASS?
-        - What's new in GRASS GIS 8?
-        - GRASS loves Remote Sensing
-        - GRASS ready for the cloud
-        - Application examples
-        - Resources
+        - Exciting new features in GRASS GIS 8.2
+        - Code quality and automated releases
+        - Community contributions
         - Get involved
     </textarea>
 </section>
@@ -400,7 +398,6 @@
             <li>Easy GRASS GIS initialization</li>
             <li>More intuitive API for rendering</li>
             <li>Classic rendering with d.* commands, rendering with webmap and zooming, also 3D rendering</li>
-            <li>Available now as experimental, coming in 8.2 officially</li>
         </ul>
     </aside>
 </section>
@@ -414,11 +411,19 @@
         <li>Usage: Prototyping, reproducibility, tutorials, &hellip;</li>
         <li>Now in GRASS GIS: Python functions for easy integration</li>
     </ul>
-    <img src="img/jupyter_text_images_3d.png" alt="GRASS GIS and Jupyter notebooks" class="stretch">
-    <p>by Caitlin Haedrich</p>
+  <!--
+    <img src="img/jupyter_text_images_3d.png" alt="GRASS GIS and Jupyter notebooks" width="33%">
+  -->
+    <img src="img/jupyter_interactive_viewshed.png" alt="GRASS GIS and viewshed" width="33%">
+    <img src="img/jupyter_timeseries_viewshed.gif" alt="GRASS GIS and viewshed time series"  width="40%">
+    <p>
+        <a href="https://tinyurl.com/grass-rc2">tinyurl.com/grass-rc2</a> (run in Binder)
+    </p>
+    <p>by Vaclav Petras, Anna Petrasova, Caitlin Haedrich</p>
 </section>
 
 
+<!-- Jupyter as separate slides
 <section>
     <h2>New! Integration with Jupyter Notebooks</h2>
     <h3>Integration of results from Google Summer of Code 2021</h3>
@@ -453,7 +458,7 @@
     <img src="img/jupyter_3d_viewshed.png" alt="GRASS GIS and 3D viewshed" class="stretch">
     <p>by Vaclav Petras, Anna Petrasova, Caitlin Haedrich</p>
 </section>
-
+-->
 
 <section>
     <h2>New! Semantic Labels for Rasters</h2>
@@ -799,7 +804,7 @@
 
 
 <section>
-    <h1>Many new addons contributed by the community</h1>
+    <h1>Selected addons contributed by the community</h1>
     <br>
     <img src="img/bonn_osgeo_code_sprint_2018.jpg" alt="GRASS GIS code sprint 2018 in Bonn" width="55%">
 </section>
@@ -811,7 +816,8 @@
     It requires <a href="https://projpicker.readthedocs.io/">ProjPicker</a>.
     <br>
     <img src="img/g_projpicker_gui.png" alt="GRASS GIS projection picker GUI" class="stretch">
-    <p>by Huidae Cho</p>
+    <p><a href="https://grass.osgeo.org/grass-stable/manuals/addons/g.projpicker.html">addon</a>
+        by Huidae Cho</p>
 </section>
 
 
@@ -831,7 +837,8 @@
     <br>
     <img src="img/i_gabor_imaginary.png" alt="GRASS GIS and Gabor filter 1" width="45%">
     <img src="img/i_gabor_segment.png" alt="GRASS GIS and Gabor filter 2" width="45%">
-    <p>by Owen Smith</p>
+    <p><a href="https://grass.osgeo.org/grass-stable/manuals/addons/i.gabor.html">addon</a>
+        by Owen Smith</p>
 </section>
 
 
@@ -839,23 +846,25 @@
     <h2>Ecological applications</h2>
     <p><em>r.suitability.regions</em> allows to identify suitable regions, e.g., for endangered species, starting from suitability maps.</p>
     <img src="img/r_suitability_suit002.png" alt="GRASS GIS and eco-suitability" class="stretch">
-    <p>by Paulo van Breugel</p>
+    <p><a href="https://grass.osgeo.org/grass-stable/manuals/addons/r.suitability.regions.html">addon</a>
+        by Paulo van Breugel</p>
 </section>
 
-
+<!-- already presented in 2021
 <section>
     <h2>Weighted layers for dasymetric mapping</h2>
     <p><em>r.area.createweight</em> creates a weighting layer for dasymetric mapping using a random forest regression model.</p>
     <img src="img/r.area.createweight_out.png" alt="GRASS GIS and dasymetric mapping" class="stretch">
     <p>by Charlotte Flasse, Tais Grippa and Safa Fennia. <a href="https://doi.org/10.5194/isprs-archives-XLVI-4-W2-2021-55-2021">DOI.</a></p>
 </section>
-
+-->
 
 <section>
     <h2>Can you see that landslide??</h2>
     <p><em>r.survey</em> allows to assess whether objects of certain size could be detected by an observer moving along roads or sitting on a flying object</p>
     <img src="img/r_survey.jpg" alt="GRASS GIS and r.survey" class="stretch">
-    <p>by Ivan Marchesini</p>
+    <p><a href="https://grass.osgeo.org/grass-stable/manuals/addons/r.survey.html">addon</a>
+        by Ivan Marchesini</p>
 </section>
 
 
@@ -866,8 +875,8 @@
         <div class="column">
             <small>
                 <ul>
-                    <li><em>m.crawl.thredds</em>: Lists URLs for netCDF datasets on Thredds servers</li>
-                    <li><em>t.rast.import.netcdf</em>: Makes Spatio-temporal data in netCDF format directly available for analysis in GRASS STRDS (also without downloading)</li>
+                    <li><a href="https://ninsbl.github.io/m.crawl.thredds/">m.crawl.thredds</a>: Lists URLs for netCDF datasets on Thredds servers</li>
+                    <li><a href="https://ninsbl.github.io/t.rast.import.netcdf/">t.rast.import.netcdf</a>: Makes Spatio-temporal data in netCDF format directly available for analysis in GRASS STRDS (also without downloading)</li>
                 </ul>
             </small>
         </div>
@@ -883,7 +892,7 @@
         <img src="img/netcdf_sources.png" alt="GRASS GIS and netCDF registration 2" width=100% class="stretch">
     </p>
     <p><small>
-        by Stefan&nbsp;Blumentrath (Norwegian Institute for Nature Research - NINA) &hellip;
+        by Stefan&nbsp;Blumentrath (Norwegian Institute for Nature Research - NINA)
     </small></p>
 </section>
 
@@ -933,7 +942,8 @@
     <em>r.viewshed.exposure</em> - Weighted cumulative viewshed analysis defining visual exposure to a source
     <br>
     <img src="img/r_viewshed_exposure.png" alt="GRASS GIS and viewshed exposure" class="stretch">
-    <p>by Zofie Cimburova and Stefan Blumentrath</p>
+    <p><a href="https://grass.osgeo.org/grass-stable/manuals/addons/r.viewshed.exposure.html">addon</a>
+        by Zofie Cimburova and Stefan Blumentrath</p>
 </section>
 
 
