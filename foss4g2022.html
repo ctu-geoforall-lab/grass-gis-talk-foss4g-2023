@@ -184,6 +184,7 @@
             <ul>
                 <li><b>GRASS GIS</b> (Geographic Resources Analysis Support System), a FOSS suite used for geospatial data management and analysis, image processing, spatial modeling, and visualization.</li>
                 <li>Originally developed by the U.S. Army CERL for land management and environmental planning (1982-1995).</li>
+                <li>Founding member of OSGeo (2006)</li>
                 <li><a href="https://grass.osgeo.org/about/history/">39 years of continuous geospatial development</a></li>
             </ul>
         </div>
@@ -304,9 +305,9 @@
 	<ul>
           <li> major.minor.micro &ndash; semantic versioning:</small></li>
            <ul>
-              <li> <small>micro (x.y.z) brings <b>fixes</b>,</small></li>
-              <li> <small>minor (x.y) brings <b>features</b>,</small></li>
               <li> <small>major (x) brings <b>features and possibly backward incompatible changes</b></small></li>
+              <li> <small>minor (x.y) brings <b>features</b>,</small></li>
+              <li> <small>micro (x.y.z) brings <b>fixes</b>,</small></li>
           </ul>
         </ul>
     <img src="img/splash_screen.png" alt="GRASS GIS splash screen" width="70%">
@@ -387,25 +388,26 @@
 -->
 
 <section>
-    <h2>Integration of GRASS GIS and Jupyter Notebooks by Caitlin Haedrich</h2>
+    <h2>Integration of GRASS GIS and Jupyter Notebooks</h2>
     <h3>Integration of results from Google Summer of Code 2021</h3>
     <img src="img/gsoc/InteractiveVectorMaps.PNG" alt="GRASS GIS and Jupyter notebooks" class="stretch">
     <p>
-        New Python library that simplifies the launch of GRASS GIS in Jupyter and the interactive display of raster/vector data.
+        New Python library that simplifies the launch of GRASS GIS in Jupyter and the interactive display of raster/vector data
     </p>
-    <aside class="notes">
+    <aside class="notes"> <!-- notes only, not show -->
         <ul>
             <li>Easy GRASS GIS initialization</li>
             <li>More intuitive API for rendering</li>
             <li>Classic rendering with d.* commands, rendering with webmap and zooming, also 3D rendering</li>
         </ul>
     </aside>
+    <!-- END notes only, not show -->
+    <p>by Caitlin Haedrich</p>
 </section>
 
 
 <section>
-    <h2>New! Integration with Jupyter Notebooks</h2>
-    <h3>Integration of results from Google Summer of Code 2021</h3>
+    <h2>Integration of GRASS GIS and Jupyter Notebooks</h2>
     <ul>
         <li>Notebooks: Mix of text, code, results, images, &hellip;</li>
         <li>Usage: Prototyping, reproducibility, tutorials, &hellip;</li>
@@ -821,35 +823,6 @@
 </section>
 
 
-<!-- too much for FOSS4G 2022
-<section>
-    <h2>Hydrologic Parameters Using a Flow Direction Raster</h2>
-    <em>r.accumulate</em> calculates weighted flow accumulation, subwatersheds, stream networks, and longest flow paths using a flow direction map.
-    <br>
-    <img src="img/r_accumulate_nc_lfp_example_subwatersheds.png" alt="GRASS GIS and flow accumulation" class="stretch">
-    <p>by Huidae Cho</p>
-</section>
--->
-
-<section>
-    <h2>Creating a Gabor filter bank</h2>
-    <em>i.gabor</em> creates directional filters for image segmentation using i.segment. It requires NumPy and SciPy.
-    <br>
-    <img src="img/i_gabor_imaginary.png" alt="GRASS GIS and Gabor filter 1" width="45%">
-    <img src="img/i_gabor_segment.png" alt="GRASS GIS and Gabor filter 2" width="45%">
-    <p><a href="https://grass.osgeo.org/grass-stable/manuals/addons/i.gabor.html">addon</a>
-        by Owen Smith</p>
-</section>
-
-
-<section>
-    <h2>Ecological applications</h2>
-    <p><em>r.suitability.regions</em> allows to identify suitable regions, e.g., for endangered species, starting from suitability maps.</p>
-    <img src="img/r_suitability_suit002.png" alt="GRASS GIS and eco-suitability" class="stretch">
-    <p><a href="https://grass.osgeo.org/grass-stable/manuals/addons/r.suitability.regions.html">addon</a>
-        by Paulo van Breugel</p>
-</section>
-
 <!-- already presented in 2021
 <section>
     <h2>Weighted layers for dasymetric mapping</h2>
@@ -896,46 +869,6 @@
     </small></p>
 </section>
 
-
-<!-- too much for FOSS4G 2022
-<section>
-    <h2>More data: Sentinel, THREDDS, &hellip;, netCDF, CSV</h2>
-    <p>
-        Automated download and import of common datasets
-        <small>
-            i.sentinel, i.modis, i.landsat, r.in.usgs, r.in.nasadem, m.crawl.thredds, t.rast.import.netcdf, &hellip;
-        </small>
-    </p>
-    <img src="img/usgs_ned_naip_3d.png" alt="GRASS GIS and NAIP 3D" class="stretch">
-    <p>
-        <small>
-            by
-            Fondazione Edmund Mach,
-            OpenGeoLabs,
-            mundialis,
-            GSoC,
-            NC&nbsp;State University,
-            CONICET,
-            Norwegian Institute for Nature Research,
-   -->
-            <!--
-            Luca&nbsp;Delucchi (Fondazione Edmund Mach),
-            Martin Landa (OpenGeoLabs),
-            Anika&nbsp;Weinmann (mundialis),
-            Guido&nbsp;Riembauer (mundialis),
-            Roberta&nbsp;Fagandini (GSoC),
-            Zechariah&nbsp;Krautwurst (GSoC),
-            Anna&nbsp;Petrasova (NC&nbsp;State University),
-            Vaclav&nbsp;Petras (NC&nbsp;State University),
-            Veronica&nbsp;Andreo (CONICET),
-            Stefan&nbsp;Blumentrath (Norwegian Institute for Nature Research - NINA)
-            -->
-   <!--
-            &hellip;
-        </small>
-    </p>
-</section>
--->
 
 <section>
     <h2>Visual Exposure to a Defined Source</h2>
@@ -1251,6 +1184,9 @@
     </ul>
 </section>
 
+
+<!-- too much for FOSS4G 2022
+
 <section>
     <h2>Sponsoring: why needed?</h2>
     <div class="columns">
@@ -1260,7 +1196,7 @@
                 <li>Money donations are very important for GRASS GIS development. They allow us to:</li>
                 <ul>
                     <li>organize face-to-face coding sessions (sprints)</li>
-                    <li>finance infrastucture needs (web site, etc)</li>
+                    <li>finance infrastructure needs (web site, etc)</li>
                     <li>pay developers to implement new features and fix specific important bugs (grants)</li>
                 </ul>
             </ul>
@@ -1271,6 +1207,7 @@
     </div>
 </section>
 
+-->
 
 <section>
     <h2>Sponsoring: how to...?</h2>
@@ -1321,10 +1258,88 @@
     <br>
     <img src="img/grass_gis.svg" alt="GRASS GIS logo" width="20%">
     <p><a href="https://grass.osgeo.org/">grass.osgeo.org</a></p>
-
+    <p></p>
+    <p>https://neteler.github.io/grass-gis-talks-markus/foss4g2022.html</p>
     <br>
     <a href="https://twitter.com/MarkusNeteler"><i class="fa fa-twitter"></i> MarkusNeteler</a><br>
 </section>
+
+
+
+
+<section>
+    <h1>Bonus material</h1>
+    <i class="fa fa-rocket fa-4x"></i>
+</section>
+
+
+<section>
+    <h2>Creating a Gabor filter bank</h2>
+    <em>i.gabor</em> creates directional filters for image segmentation using i.segment. It requires NumPy and SciPy.
+    <br>
+    <img src="img/i_gabor_imaginary.png" alt="GRASS GIS and Gabor filter 1" width="45%">
+    <img src="img/i_gabor_segment.png" alt="GRASS GIS and Gabor filter 2" width="45%">
+    <p><a href="https://grass.osgeo.org/grass-stable/manuals/addons/i.gabor.html">addon</a>
+        by Owen Smith</p>
+</section>
+
+
+<section>
+    <h2>Hydrologic Parameters Using a Flow Direction Raster</h2>
+    <em>r.accumulate</em> calculates weighted flow accumulation, subwatersheds, stream networks, and longest flow paths using a flow direction map.
+    <br>
+    <img src="img/r_accumulate_nc_lfp_example_subwatersheds.png" alt="GRASS GIS and flow accumulation" class="stretch">
+    <p>by Huidae Cho</p>
+</section>
+
+
+<section>
+    <h2>Ecological applications</h2>
+    <p><em>r.suitability.regions</em> allows to identify suitable regions, e.g., for endangered species, starting from suitability maps.</p>
+    <img src="img/r_suitability_suit002.png" alt="GRASS GIS and eco-suitability" class="stretch">
+    <p><a href="https://grass.osgeo.org/grass-stable/manuals/addons/r.suitability.regions.html">addon</a>
+        by Paulo van Breugel</p>
+</section>
+
+
+<section>
+    <h2>More data: Sentinel, THREDDS, &hellip;, netCDF, CSV</h2>
+    <p>
+        Automated download and import of common datasets
+        <small>
+            i.sentinel, i.modis, i.landsat, r.in.usgs, r.in.nasadem, m.crawl.thredds, t.rast.import.netcdf, &hellip;
+        </small>
+    </p>
+    <img src="img/usgs_ned_naip_3d.png" alt="GRASS GIS and NAIP 3D" class="stretch">
+    <p>
+        <small>
+            by
+            Fondazione Edmund Mach,
+            OpenGeoLabs,
+            mundialis,
+            GSoC,
+            NC&nbsp;State University,
+            CONICET,
+            Norwegian Institute for Nature Research,
+            <!--
+            Luca&nbsp;Delucchi (Fondazione Edmund Mach),
+            Martin Landa (OpenGeoLabs),
+            Anika&nbsp;Weinmann (mundialis),
+            Guido&nbsp;Riembauer (mundialis),
+            Roberta&nbsp;Fagandini (GSoC),
+            Zechariah&nbsp;Krautwurst (GSoC),
+            Anna&nbsp;Petrasova (NC&nbsp;State University),
+            Vaclav&nbsp;Petras (NC&nbsp;State University),
+            Veronica&nbsp;Andreo (CONICET),
+            Stefan&nbsp;Blumentrath (Norwegian Institute for Nature Research - NINA)
+            -->
+            &hellip;
+        </small>
+    </p>
+</section>
+
+
+
 
         </div>
     </div>
