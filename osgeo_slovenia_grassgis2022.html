@@ -134,7 +134,7 @@
       <div class="slides">
 
 <section>
-    <h1>State of GRASS&nbsp;GIS</h1>
+    <h1>GRASS GIS 8: from Desktop to Big Data Cubes</h1>
     <p style="margin-top: 0.5em">
         <a href="https://www.mundialis.de/en/neteler/">Markus Neteler</a>
         <br>
@@ -143,7 +143,7 @@
 
     <img src="img/grass_gis.svg" alt="GRASS GIS log" class="stretch">
     <p><small><a href="https://spatialmind.org/OSGeo.html">Open Source Geospatial Slovenija 2022</a></small></p>
-    <p><small><a href="https://neteler.github.io/grass-gis-talks/osgeo_slovenia_grassgis2022.html">neteler.github.io/grass-gis-talks/</a></small>
+    <p><small><a href="https://htmlpreview.github.io/?https://github.com/neteler/grass-gis-talks-markus/blob/main/osgeo_slovenia_grassgis2022.html#/">github.com/neteler/grass-gis-talks-markus/blob/main/osgeo_slovenia_grassgis2022.html</a></small></p>
 </section>
 
 
@@ -170,8 +170,9 @@
     ## Overview of this talk
         - For newcomers: which GRASS GIS?
         - A better GUI experience in GRASS 8.2+
+        - Interfaces to other software
         - Exciting new features in GRASS 8.2+
-        - Code quality and automated releases
+        - GRASS GIS is ready for the cloud
         - Community contributions
         - Get involved
     </textarea>
@@ -778,8 +779,10 @@
     <br>
     <img src="img/grass_gis.svg" alt="GRASS GIS logo" class="stretch">
 </section>
-
 -->
+
+
+<!-- nice but too much for OSGeo Slovenia 2022 talk
 
 <section>
     <h1>Code quality and automated releases</h1>
@@ -812,56 +815,10 @@
     <img src="img/github_grass_releases.png" alt="GRASS GIS and automated software releases" class="stretch">
     <p>by Vaclav Petras (procedure support by Markus Neteler)</p>
 </section>
-
-
-<section>
-    <h1>Selected addons contributed by the community</h1>
-    <br>
-    <img src="img/bonn_osgeo_code_sprint_2018.jpg" alt="GRASS GIS code sprint 2018 in Bonn" width="55%">
-</section>
-
-
-<section>
-    <h2>Spatial Query of Projections</h2>
-    <em>g.projpicker</em> queries projections spatially using user-drawn geometries and set-theoretic logical operators.
-    It requires <a href="https://projpicker.readthedocs.io/">ProjPicker</a>.
-    <br>
-    <img src="img/g_projpicker_gui.png" alt="GRASS GIS projection picker GUI" class="stretch">
-    <p><a href="https://grass.osgeo.org/grass-stable/manuals/addons/g.projpicker.html">addon</a>
-        by Huidae Cho</p>
-</section>
-
-
-<!-- already presented in 2021
-<section>
-    <h2>Weighted layers for dasymetric mapping</h2>
-    <p><em>r.area.createweight</em> creates a weighting layer for dasymetric mapping using a random forest regression model.</p>
-    <img src="img/r.area.createweight_out.png" alt="GRASS GIS and dasymetric mapping" class="stretch">
-    <p>by Charlotte Flasse, Tais Grippa and Safa Fennia. <a href="https://doi.org/10.5194/isprs-archives-XLVI-4-W2-2021-55-2021">DOI.</a></p>
-</section>
 -->
-
-<section>
-    <h2>Can you see that landslide??</h2>
-    <p><em>r.survey</em> allows to assess whether objects of certain size could be detected by an observer moving along roads or sitting on a flying object</p>
-    <img src="img/r_survey.jpg" alt="GRASS GIS and r.survey" class="stretch">
-    <p><a href="https://grass.osgeo.org/grass-stable/manuals/addons/r.survey.html">addon</a>
-        by Ivan Marchesini</p>
-</section>
-
-
-<section>
-    <h2>Visual Exposure to a Defined Source</h2>
-    <em>r.viewshed.exposure</em> - Weighted cumulative viewshed analysis defining visual exposure to a source
-    <br>
-    <img src="img/r_viewshed_exposure.png" alt="GRASS GIS and viewshed exposure" class="stretch">
-    <p><a href="https://grass.osgeo.org/grass-stable/manuals/addons/r.viewshed.exposure.html">addon</a>
-        by Zofie Cimburova and Stefan Blumentrath</p>
-</section>
 
 
 <!-- too much for FOSS4G 2022
-
 <section id="GRASS for Remote Sensing">
 
 <section>
@@ -998,12 +955,10 @@
 </section>
 
 </section>
-
-
-<section id="GRASS is ready for the cloud">
+-->
 
 <section>
-    <h1>GRASS is ready for the cloud</h1>
+    <h1>GRASS GIS is ready for the cloud</h1>
     <img src="img/grass_in_the_clouds.png" alt="GRASS GIS and cloud processing" width="50%">
 </section>
 
@@ -1032,9 +987,7 @@
     <small>by Carmen Tawalika, Anika Weinmann, Markus Neteler, Sören Gebbert, &hellip;</small>
 </section>
 
-</section>
-
-
+<!--
 <section id="Applications">
 
 <section>
@@ -1044,6 +997,7 @@
     <img src="img/lst_reconstruction.png" alt="GRASS GIS and land surface temperature gap-filling" class="stretch">
     <p><small>Daily LST space-time reconstruction done with GRASS - <a href="https://www.mdpi.com/2072-4292/9/12/1333/htm">Metz et al. 2017.</a></small></p>
 </section>
+-->
 
 <section>
     <h2>Germany land-cover mapping based on Sentinel-2 data</h2>
@@ -1059,6 +1013,7 @@
     <small>For details, follow <a href="https://www.mundialis.de/en/deutschland-2020-landbedeckung-auf-basis-von-sentinel-2-daten/">this</a> blog post.</small>
 </section>
 
+<!--
 <section>
     <h2>Forest monitoring</h2>
     <h6>GRASS modules in use (excerpt):</h6>
@@ -1072,6 +1027,7 @@
     <img src="img/hermosa1.png" alt="Hermosa 1" width="49%"> <img src="img/hermosa2.png" alt="Hermosa 2" width="46%">
     <small>Register and try the HERMOSA demo at <a href="https://hermosa.earth/">https://hermosa.earth</a></small>
 </section>
+-->
 
 <section>
     <h2>Flood Mapping in Ecuador based on Sentinel-1 data</h2>
@@ -1087,8 +1043,54 @@
     <small>For details, follow <a href="https://www.mundialis.de/en/sendai-flood-mapping-in-ecuador-based-on-sentinel-1-data/">this</a> blog post.</small>
 </section>
 
+<section>
+    <h1>Selected addons contributed by the community</h1>
+    <br>
+    <img src="img/bonn_osgeo_code_sprint_2018.jpg" alt="GRASS GIS code sprint 2018 in Bonn" width="55%">
 </section>
 
+
+<section>
+    <h2>Spatial Query of Projections</h2>
+    <em>g.projpicker</em> queries projections spatially using user-drawn geometries and set-theoretic logical operators.
+    It requires <a href="https://projpicker.readthedocs.io/">ProjPicker</a>.
+    <br>
+    <img src="img/g_projpicker_gui.png" alt="GRASS GIS projection picker GUI" class="stretch">
+    <p><a href="https://grass.osgeo.org/grass-stable/manuals/addons/g.projpicker.html">addon</a>
+        by Huidae Cho</p>
+</section>
+
+
+<!-- already presented in 2021
+<section>
+    <h2>Weighted layers for dasymetric mapping</h2>
+    <p><em>r.area.createweight</em> creates a weighting layer for dasymetric mapping using a random forest regression model.</p>
+    <img src="img/r.area.createweight_out.png" alt="GRASS GIS and dasymetric mapping" class="stretch">
+    <p>by Charlotte Flasse, Tais Grippa and Safa Fennia. <a href="https://doi.org/10.5194/isprs-archives-XLVI-4-W2-2021-55-2021">DOI.</a></p>
+</section>
+-->
+
+<section>
+    <h2>Can you see that landslide??</h2>
+    <p><em>r.survey</em> allows to assess whether objects of certain size could be detected by an observer moving along roads or sitting on a flying object</p>
+    <img src="img/r_survey.jpg" alt="GRASS GIS and r.survey" class="stretch">
+    <p><a href="https://grass.osgeo.org/grass-stable/manuals/addons/r.survey.html">addon</a>
+        by Ivan Marchesini</p>
+</section>
+
+
+<section>
+    <h2>Visual Exposure to a Defined Source</h2>
+    <em>r.viewshed.exposure</em> - Weighted cumulative viewshed analysis defining visual exposure to a source
+    <br>
+    <img src="img/r_viewshed_exposure.png" alt="GRASS GIS and viewshed exposure" class="stretch">
+    <p><a href="https://grass.osgeo.org/grass-stable/manuals/addons/r.viewshed.exposure.html">addon</a>
+        by Zofie Cimburova and Stefan Blumentrath</p>
+</section>
+
+
+
+<!--
 <section id="Resources">
 <section>
 <h2>Plenty of resources</h2>
@@ -1238,7 +1240,7 @@
     <img src="img/grass_gis.svg" alt="GRASS GIS logo" width="20%">
     <p><a href="https://grass.osgeo.org/">grass.osgeo.org</a></p>
     <p></p>
-    <p><small><a href="https://htmlpreview.github.io/?https://github.com/neteler/grass-gis-talks-markus/blob/main/osgeo_slovenia_grassgis2022.html#/27">github.com/neteler/grass-gis-talks-markus/blob/main/osgeo_slovenia_grassgis2022.html</a></small></p>
+    <p><small><a href="https://htmlpreview.github.io/?https://github.com/neteler/grass-gis-talks-markus/blob/main/osgeo_slovenia_grassgis2022.html#/">github.com/neteler/grass-gis-talks-markus/blob/main/osgeo_slovenia_grassgis2022.html</a></small></p>
     <br>
     <a href="https://twitter.com/MarkusNeteler"><i class="fa fa-twitter"></i> MarkusNeteler</a><br>
 </section>
