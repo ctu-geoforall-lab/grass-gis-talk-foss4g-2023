@@ -1,8 +1,8 @@
 # GRASS GIS Talks
 
-    * FOSS4G 2023 - Prizren: [State of GRASS GIS](https://ctu-geoforall-lab.github.io/grass-gis-talk-foss4g-2023/foss4g2023.html)
-    * FOSS4G 2022 - Florence: [State of GRASS GIS](https://neteler.github.io/grass-gis-talks-markus/foss4g2022.html)
-    * Open Source Geospatial Slovenija 2022  [GRASS GIS 8: from Desktop to Big Data Cubes](https://htmlpreview.github.io/?https://github.com/neteler/grass-gis-talks-markus/blob/main/osgeo_slovenia_grassgis2022.html#/27)
+* FOSS4G 2023 - Prizren: [State of GRASS GIS](https://ctu-geoforall-lab.github.io/grass-gis-talk-foss4g-2023/foss4g2023.html)
+* FOSS4G 2022 - Florence: [State of GRASS GIS](https://neteler.github.io/grass-gis-talks-markus/foss4g2022.html)
+* Open Source Geospatial Slovenija 2022  [GRASS GIS 8: from Desktop to Big Data Cubes](https://htmlpreview.github.io/?https://github.com/neteler/grass-gis-talks-markus/blob/main/osgeo_slovenia_grassgis2022.html#/27)
 
 ## Authors, Copyright, and License
 
