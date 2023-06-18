@@ -510,43 +510,34 @@
 
 
 <section>
-    <h1>More parallelization in GRASS 8.2+</h1>
+    <h1>More parallelization in GRASS 8.3</h1>
     <i class="fa fa-rocket fa-4x"></i>
 </section>
 
-
 <section>
-    <h2>OpenMP parallelization</h2>
-    <h3>Integration of results from Google Summer of Code 2021</h3>
+    <h2>New in GRASS GIS 8.3</h2>
     <div class="container">
         <div class="col">
+            <p style="text-align:left">Parallel C tools (OpenMP)
             <ul>
-                <li>r.series</li>
                 <li>r.univar</li>
-                <li>r.neighbors</li>
-                <li>r.patch</li>
                 <li>r.resamp.interp</li>
                 <li>r.resamp.filter</li>
-                <li>r.mfilter</li>
-                <li>r.slope.aspect</li>
             </ul>
-            <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ benchmarking library</p>
+            <p style="text-align:left">Parallel Python tools
+                <ul>
+                    <li>t.rast.univar</li>
+                    <li>t.rast3d.univar</li>
+                </ul>
         </div>
         <div class="col">
-            <img src="img/gsoc/openmp.png" alt="GRASS GIS and openMP" width="70%">
+            <img src="img/gsoc/rneighbors_openmp.png" alt="GRASS GIS and openMP" width="80%">
         </div>
     </div>
-    <p>by Aaron Saw Min Sern and Anna Petrasova</p>
-    <p>Available in 8.2+</p>
-    <aside class="notes">
-        <ul>
-            <li>Parallelization of multiple, often used raster modules, with benchmarks.</li>
-            <li>Especially useful for big data processing</li>
-            <li>Supported on all platforms, provided GRASS is compiled with OpenMP</li>
-        </ul>
-    </aside>
-</section>
+    <p>+ fixes in other parallel tools and benchmarks</p>
+    <p>by Aaron Saw Min Sern, Stefan Blumentrath and Anna Petrasova</p>
 
+</section>
 
 <!-- other variant
 <section>
@@ -585,11 +576,11 @@
         <li>
             Core tools:
             <small>
-            r.sun, v.surf.rst, r.sim.sediment, r.sim.water
+            r.series, r.neighbors, r.patch, r.mfilter, r.slope.aspect, r.sun, v.surf.rst, r.sim.sediment, r.sim.water
             </small>
         </li>
         <li>
-            Addons tools:
+            Addon tools:
             <small>
             r.sun.daily, r.in.usgs,
             r.mapcalc.tiled, t.rast.what.aggr,
@@ -601,12 +592,12 @@
         <li>
             Parallelizing custom Python scripts:
             <ul>
-                <li>GridModule <small>(by tile)</small></li>
-                <li>multiprocessing, ParallelModuleQueue <small>(by task)</small></li>
+                <li>Data parallelization: GridModule</li>
+                <li>Task parallelization: multiprocessing, ParallelModuleQueue</li>
             </ul>
         </li>
     </ul>
-    <img src="img/piemonte_shaded_elevation.png" alt="GRASS GIS and Piemonte shaded elevation" class="stretch">
+    <img src="img/parallel_tools.png" alt="Data and task based parallelization" class="stretch">
 </section>
 
 
